@@ -10,16 +10,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tomyitav/express-es6-starter.git"
-  },
   "keywords": [
     "Node.js",
     "Javascript",
     "Express"
   ],
-  "author": "Tom Yitav <tomyitav@gmail.com>",
   "dependencies": {
     "body-parser": "^1.15.2",
     "cors": "^2.8.0",
@@ -45,13 +40,15 @@
     "eslint-config-airbnb": "^12.0.0",
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-react": "^6.4.1",
+    "@ratehub/eslint-config-js": "^1.0.0",
     "nodemon": "^1.9.1"
   },
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": [
       "airbnb/base",
-      "plugin:import/errors"
+      "plugin:import/errors",
+      "@ratehub/eslint-config-js"
     ],
     "rules": {
       "no-use-before-define": 0,
